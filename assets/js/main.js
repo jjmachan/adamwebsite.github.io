@@ -92,8 +92,18 @@ jQuery(document).ready(function ($) {
         return false;
     });
 
-
-
+    
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 20) {
+            if (!$('.navbar').hasClass('shrink')) {
+                 $('.navbar').addClass('shrink');
+                }
+            } else {
+            if ($('.navbar').hasClass('shrink')) {
+                $('.navbar').removeClass('shrink');
+            }
+        }
+    });
 
 
 

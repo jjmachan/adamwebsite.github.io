@@ -837,7 +837,12 @@ textarea::-ms-input-placeholder{
 /*
 Nav Menu style
 ==================*/
-
+.navbar{
+    transition: top 5.5s;
+}
+.navbar.shrink{
+    top: 0;
+}
 .navbar-brand {
     padding: 25px 15px;
 }
