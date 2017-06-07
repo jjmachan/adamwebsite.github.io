@@ -94,13 +94,13 @@ jQuery(document).ready(function ($) {
 
     
     $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 20) {
-            if (!$('.navbar').hasClass('shrink')) {
-                 $('.navbar').addClass('shrink');
+        if ($(this).scrollTop() > 500) {
+            if (!$('.navbar').hasClass('opaque')) {
+                 $('.navbar').addClass('opaque');
                 }
             } else {
-            if ($('.navbar').hasClass('shrink')) {
-                $('.navbar').removeClass('shrink');
+            if ($('.navbar').hasClass('opaque')) {
+                $('.navbar').removeClass('opaque');
             }
         }
     });

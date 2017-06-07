@@ -838,6 +838,7 @@ textarea::-ms-input-placeholder{
 Nav Menu style
 ==================*/
 .navbar{
+    color:#fff;
     transition: top 5.5s;
 }
 .navbar.shrink{
@@ -873,6 +874,22 @@ Nav Menu style
     color:#fff;
 }
 
+.transparent {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.opaque {
+    animation: fade 1s forwards;
+    background-color: rgba(255,255,255,0) !important;
+    border-color: transparent;
+}
+
+@keyframes fade {
+    from{background-color: rgba(255,255,255,255,0);}
+    to{background-color: rgba(255,255,255,1);}
+}
 
 /*
 Home Section style
@@ -1233,7 +1250,7 @@ work Section style
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 20px solid #00a885;
+    border-top: 20px solid #fff;
     left:50%;
     top:0%;
     z-index: 3;
